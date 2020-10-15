@@ -9,6 +9,58 @@
     <title>Stivmebel</title>
 </head>
 <body>
+    <div class="menu-all menu-all-hide">
+        <div class="menu-all-list">
+            <ul class="menu-all-menu-list">
+                <li class="all-menu-hover">
+                    <p>О компании</p>
+                    <ul>
+                        <li>
+                            <a href="">Вакансии</a>
+                        </li>
+                        <li>
+                            <a href="">Наши партнеры</a>
+                        </li>
+                        <li>
+                            <a href="">Дилерам</a>
+                        </li>
+                        <li>
+                            <a href="">Производителям</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="">Гарантия</a></li>
+                <li><a href="">Оплата</a></li>
+                <li><a href="">Доставка</a></li>
+                <li><a href="">Производители</a></li>
+                <li class="all-menu-hover"><p>Полезное</p>
+                    <ul>
+                        <li>
+                            <a href="">Полезные статьи</a>
+                        </li>
+                        <li>
+                            <a href="">Вопрос-ответ</a>
+                        </li>
+                    </ul></li>
+                <li><a href="">Корзина</a></li>
+                <li><a href="">Kонтакты</a></li>
+            </ul>
+        </div>
+        <div class="menu-all-catalog">
+            <ul>
+                <li><a href="">Акции</a></li>
+                <li><a href="">Мебель в гостинную</a></li>
+                <li><a href="">Мебель в спальню</a></li>
+                <li><a href="">Мебель в прихожую</a></li>
+                <li><a href="">Мебель в детскую</a></li>
+                <li><a href="">Офисная мебель</a></li>
+                <li><a href="">Мягкая мебель</a></li>
+                <li><a href="">Шкафы</a></li>
+                <li><a href="">Кухни, мебель в кухню</a></li>
+                <li><a href="">Садовая мебель</a></li>
+            </ul>
+        </div>
+    </div>
     <div class="header-menu">
         <div class="container">
             <ul class="menu__list">
@@ -42,12 +94,13 @@
                             <a href="">Вопрос-ответ</a>
                         </li>
                     </ul></li>
-                <li><a href="">Магазины</a></li>
+                <li><a href="">Корзина</a></li>
                 <li><a href="">Kонтакты</a></li>
             </ul>
         </div>
     </div>
     <header>
+        <div class="menu-switcher menu-switcher-hide"><p>Catalog</p></div>
         <div class="container">
             <div class="logo">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><image data-name="Слой 1" xlink:href="data:img/png;base64,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"/></svg>
@@ -56,7 +109,7 @@
                 </div>
             </div>
             <div class="header-for-catalog">
-                <div class="header-catalog">
+                <div class="header-catalog menu-show">
                     <ul>
                         <li><a href="">Акции</a></li>
                         <li><a href="">Мебель в гостинную</a></li>
@@ -163,7 +216,7 @@
     <section class="wr-down">
         <div class="container">
             <div class="header-for-catalog">
-                <div class="header-catalog">
+                <div class="header-catalog menu-show">
                     <ul>
                         <li><a href="">Акции</a></li>
                         <li><a href="">Мебель в гостинную</a></li>
@@ -197,5 +250,6 @@
             <a href="https://mitskevich-paul.github.io/resume/">Разработка сайтов</a>
         </div>
     </footer>
+    <script src="./build/js/main.min.js"></script>
 </body>
 </html>
