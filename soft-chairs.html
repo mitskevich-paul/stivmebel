@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./build/css/style.min.css">
+    <link rel="icon" href="../build/img/favicon.ico.png"/>
+    <title>Stivmebel</title>
+</head>
+<body>
+    <div class="menu-all menu-all-hide">
+        <div class="menu-all-list">
+            <ul class="menu-all-menu-list">
+                <li class="all-menu-hover">
+                    <p>О компании</p>
+                    <ul>
+                        <li>
+                            <a href="./living-room.html">Вакансии</a>
+                        </li>
+                        <li>
+                            <a href="./living-room.html">Наши партнеры</a>
+                        </li>
+                        <li>
+                            <a href="./living-room.html">Дилерам</a>
+                        </li>
+                        <li>
+                            <a href="./living-room.html">Производителям</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="./living-room.html">Гарантия</a></li>
+                <li><a href="./living-room.html">Оплата</a></li>
+                <li><a href="./living-room.html">Доставка</a></li>
+                <li><a href="./living-room.html">Производители</a></li>
+                <li class="all-menu-hover"><p>Полезное</p>
+                    <ul>
+                        <li>
+                            <a href="./living-room.html">Полезные статьи</a>
+                        </li>
+                        <li>
+                            <a href="./living-room.html">Вопрос-ответ</a>
+                        </li>
+                    </ul></li>
+                <li><a class="numer-of-reserv" href="./reserv.html">Зарезервировано<span></span></a></li>
+                <li><a href="./living-room.html">Kонтакты</a></li>
+            </ul>
+        </div>
+        <div class="menu-all-catalog">
+            <ul>
+                <li><a href="./living-room.html">Акции</a></li>
+                <li><a href="./living-room.html">Мебель в гостинную</a></li>
+                <li><a href="./living-room.html">Мебель в спальню</a></li>
+                <li><a href="./hallway.html">Мебель в прихожую</a></li>
+                <li><a href="./living-room.html">Мебель в детскую</a></li>
+                <li><a href="./living-room.html">Офисная мебель</a></li>
+                <li><a href="./soft-portal.html">Мягкая мебель</a></li>
+                <li><a href="./living-room.html">Шкафы</a></li>
+                <li><a href="./living-room.html">Кухни, мебель в кухню</a></li>
+                <li><a class="numer-of-reserv" href="./reserv.html">Зарезервировано<span></span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="header-menu">
+        <div class="container">
+            <ul class="menu__list">
+                <li class="menu-hover">
+                    <p>О компании</p>
+                    <ul>
+                        <li>
+                            <a href="./living-room.html">Вакансии</a>
+                        </li>
+                        <li>
+                            <a href="./living-room.html">Наши партнеры</a>
+                        </li>
+                        <li>
+                            <a href="./living-room.html">Дилерам</a>
+                        </li>
+                        <li>
+                            <a href="./living-room.html">Производителям</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="./living-room.html">Гарантия</a></li>
+                <li><a href="./living-room.html">Оплата</a></li>
+                <li><a href="./living-room.html">Доставка</a></li>
+                <li><a href="./living-room.html">Производители</a></li>
+                <li class="menu-hover"><p>Полезное</p>
+                    <ul>
+                        <li>
+                            <a href="./living-room.html">Полезные статьи</a>
+                        </li>
+                        <li>
+                            <a href="./living-room.html">Вопрос-ответ</a>
+                        </li>
+                    </ul></li>
+                <li><a class="numer-of-reserv" href="./reserv.html">Зарезервировано<span></span></a></li>
+                <li><a href="./living-room.html">Kонтакты</a></li>
+            </ul>
+        </div>
+    </div>
+    <header>
+        <div class="menu-switcher menu-switcher-hide"><p>Catalog</p></div>
+        <div class="container">
+            <div class="logo">
+                <span class="to-main">На главную &#8593;</span>
+                <svg class="logo-link" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><image data-name="Слой 1" xlink:href="data:img/png;base64,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"/></svg>
+                <div class="contact-form">
+                    <p class="make-a-call makeacall">Заказать звонок</p>
+                </div>
+            </div>
+            <div class="header-for-catalog">
+                <div class="header-catalog menu-show">
+                    <ul>
+                        <li><a href="./living-room.html">Акции</a></li>
+                        <li><a href="./living-room.html">Мебель в гостинную</a></li>
+                        <li><a href="./living-room.html">Мебель в спальню</a></li>
+                        <li><a href="./hallway.html">Мебель в прихожую</a></li>
+                        <li><a href="./living-room.html">Мебель в детскую</a></li>
+                        <li><a href="./living-room.html">Офисная мебель</a></li>
+                        <li><a href="./soft-portal.html">Мягкая мебель</a></li>
+                        <li><a href="./living-room.html">Шкафы</a></li>
+                        <li><a href="./living-room.html">Кухни, мебель в кухню</a></li>
+                        <li><a class="numer-of-reserv" href="./reserv.html">Зарезервировано<span></span></a></li>
+                    </ul>
+                </div>
+                <div class="header-contacts">
+                    <div class="bg-darker">
+                        <p>Номера телефонов:</p>
+                        <a href="./living-room.html">+375441112233</a>
+                        <a href="./living-room.html">+375291112233</a>
+                        <p>Электронная почта:</p>
+                        <a href="mailto:stivmebel@gmail.com">stivmebel@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M 24.996094 2 C 20.520865 2 16.366495 5.8464316 13.240234 11.044922 C 10.113974 16.243412 8 22.941841 8 29.261719 C 8 34.240287 9.4303571 38.905289 12.298828 42.359375 C 15.167299 45.813461 19.495886 48 24.996094 48 C 30.4925 48 34.824385 45.813208 37.695312 42.359375 C 40.56624 38.905542 42 34.240774 42 29.261719 C 42 22.941622 39.883895 16.243363 36.755859 11.044922 C 33.627824 5.8464805 29.470479 2 24.996094 2 z M 24.996094 4 C 28.257708 4 32.103504 7.1911131 35.042969 12.076172 C 37.982434 16.961231 40 23.393815 40 29.261719 C 40 33.855663 38.668572 38.059614 36.15625 41.082031 C 33.643928 44.104449 29.972687 46 24.996094 46 C 20.015302 46 16.34767 44.104196 13.837891 41.082031 C 11.328112 38.059867 10 33.856151 10 29.261719 C 10 23.393597 12.015385 16.961182 14.953125 12.076172 C 17.890865 7.191162 21.733323 4 24.996094 4 z"></path></svg> -->
+    </header>
+
+    <section class="wr-catalog">
+        <div class="container">
+            <div class="address"><a href="./index.html">Главная</a><span>&#8594;</span><a href="./soft-portal.html">Мягкая мебель</a><span>&#8594;</span><a href="./soft-chairs.html"></a></div>
+            <div class="catalog-width">
+                <div class="element-container">
+                    <div class="before-image c-sc-1-1"></div>
+                    <h4 class="element-name">м22.46-1 кресло "сигма"</h4>
+                    <div class="catalog-element sc-1">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">292.25 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-2-1 c-sc-2-2 c-sc-2-3"></div>
+                    <h4 class="element-name">м22.46-2 диван "сигма"</h4>
+                    <div class="catalog-element sc-2">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">491.83 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-3-1 c-sc-3-2"></div>
+                    <h4 class="element-name">м22.46-3 диван "сигма"</h4>
+                    <div class="catalog-element sc-3">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">641.52 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-4-1 c-sc-4-2 c-sc-4-3"></div>
+                    <h4 class="element-name">м22.38 диван</h4>
+                    <div class="catalog-element sc-4">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">424.80 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-5-1 c-sc-5-2"></div>
+                    <h4 class="element-name">м22.38 диван</h4>
+                    <div class="catalog-element sc-5">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">424.80 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-6-1"></div>
+                    <h4 class="element-name">м22.20-1,5 диван</h4>
+                    <div class="catalog-element sc-6">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">363.0 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-7-1"></div>
+                    <h4 class="element-name">м22.42 диван</h4>
+                    <div class="catalog-element sc-7">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">390.82 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-8-1 c-sc-8-2 c-sc-8-3"></div>
+                    <h4 class="element-name">м22.20-1,8 диван</h4>
+                    <div class="catalog-element sc-8">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">377.52 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-9-1">
+                         
+                    </div>
+                    <h4 class="element-name">м22.20 диван</h4>
+                    <div class="catalog-element sc-9"></div>
+                    <p class="element-price">330.00 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-10-1 c-sc-10-2 c-sc-10-3"></div>
+                    <h4 class="element-name">м22.21 кресло</h4>
+                    <div class="catalog-element sc-10">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">168.0 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-11-1 c-sc-11-2 c-sc-11-3"></div>
+                    <h4 class="element-name">м22.22 кресло</h4>
+                    <div class="catalog-element sc-11">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">192.0 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-12-1">
+                    </div>
+                    <h4 class="element-name">м22.23 кресло</h4>
+                    <div class="catalog-element sc-12">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">274.80 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-13-1"></div>
+                    <h4 class="element-name">к-т кресел</h4>
+                    <div class="catalog-element sc-13">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">552.0 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-14-1 c-sc-14-2 c-sc-14-3"></div>
+                    <h4 class="element-name">к-т мягкой мебели</h4>
+                    <div class="catalog-element sc-14">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">уточняйте.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-15-1 c-sc-15-2"></div>
+                    <h4 class="element-name">к-т кресел</h4>
+                    <div class="catalog-element sc-15">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">360.0 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-16-1 c-sc-16-2 c-sc-16-3"></div>
+                    <h4 class="element-name">к-т кресел</h4>
+                    <div class="catalog-element sc-16">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">384.0 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-17-1 c-sc-17-2 c-sc-17-3"></div>
+                    <h4 class="element-name">к-т мягкой мебели</h4>
+                    <div class="catalog-element sc-17">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">552.0 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-18-1 c-sc-18-2 c-sc-18-3">
+                    </div>
+                    <h4 class="element-name">к-т мягкой мебели</h4>
+                    <div class="catalog-element sc-18">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">552.0 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-19-1 c-sc-19-2"></div>
+                    <h4 class="element-name">м22.44-1 диван</h4>
+                    <div class="catalog-element sc-19">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">279.31 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-20-1 c-sc-20-2"></div>
+                    <h4 class="element-name">м22.44-1,8 диван</h4>
+                    <div class="catalog-element sc-20">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">425.83 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-21-1 c-sc-21-2"></div>
+                    <h4 class="element-name">м22.35 диван</h4>
+                    <div class="catalog-element sc-21">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">493.68 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-22-1 c-sc-22-2 c-sc-22-3"></div>
+                    <h4 class="element-name">диван с нишей</h4>
+                    <div class="catalog-element sc-22">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">396.0 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-23-1 c-sc-23-2 c-sc-23-3"></div>
+                    <h4 class="element-name">диван с нишей</h4>
+                    <div class="catalog-element sc-23">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">345.0 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-24-1 c-sc-24-2 c-sc-24-3"></div>
+                    <h4 class="element-name">диван с нишей</h4>
+                    <div class="catalog-element sc-24">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">345.0 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-25-1"></div>
+                    <h4 class="element-name">м22.43 диванчик</h4>
+                    <div class="catalog-element sc-25">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">229.86 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-26-1 c-sc-26-2 c-sc-26-3"></div>
+                    <h4 class="element-name">м22.45 диван</h4>
+                    <div class="catalog-element sc-26">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">315.74 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-27-1 c-sc-27-2"></div>
+                    <h4 class="element-name">Кресло</h4>
+                    <div class="catalog-element sc-27">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">174.0 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-28-1 c-sc-28-2"></div>
+                    <h4 class="element-name">м22.49 кресло</h4>
+                    <div class="catalog-element sc-28">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">316.22 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-29-1 c-sc-29-2 c-sc-29-3"></div>
+                    <h4 class="element-name">м22.48 кресло</h4>
+                    <div class="catalog-element sc-29">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">468.0 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-30-1 c-sc-30-2"></div>
+                    <h4 class="element-name">м22.8 диван-банан</h4>
+                    <div class="catalog-element sc-30">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">459.60 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-31-1"></div>
+                    <h4 class="element-name">м22.7 диван-луна</h4>
+                    <div class="catalog-element sc-31">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">243.60 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-32-1"></div>
+                    <h4 class="element-name">м22.6 мягкий уголок со столиком</h4>
+                    <div class="catalog-element sc-32">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">588.0 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-33-1 c-sc-33-2 c-sc-33-3"></div>
+                    <h4 class="element-name">диван-01</h4>
+                    <div class="catalog-element sc-33">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">274.10 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-34-1 c-sc-34-2 c-sc-34-3"></div>
+                    <h4 class="element-name">Диван-02</h4>
+                    <div class="catalog-element sc-34">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">306.50 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-35-1 c-sc-35-2"></div>
+                    <h4 class="element-name">Диван-03</h4>
+                    <div class="catalog-element sc-35">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">375.19 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-36-1 c-sc-36-2"></div>
+                    <h4 class="element-name">Диван-04</h4>
+                    <div class="catalog-element sc-36">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">410.18 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-37-1"></div>
+                    <h4 class="element-name">м22.31 кресло-колобок</h4>
+                    <div class="catalog-element sc-37">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">202.80 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-38-1"></div>
+                    <h4 class="element-name">м22.36 диван</h4>
+                    <div class="catalog-element sc-38">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">486.00 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-39-1"></div>
+                    <h4 class="element-name">м22.9 диван</h4>
+                    <div class="catalog-element sc-39">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">337.20 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-40-1"></div>
+                    <h4 class="element-name">м22.1 к-т мягкой мебели со столиком</h4>
+                    <div class="catalog-element sc-40">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">654.0 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-41-1"></div>
+                    <h4 class="element-name">м22.2 к-т мягкой мебели</h4>
+                    <div class="catalog-element sc-41">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">579.60 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-42-1"></div>
+                    <h4 class="element-name">м22.3 к-т мягкой мебели</h4>
+                    <div class="catalog-element sc-42">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">649.20 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-43-1 c-sc-43-2 c-sc-43-3"></div>
+                    <h4 class="element-name">м22.4 диван угловой</h4>
+                    <div class="catalog-element sc-43">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">692.40 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-44-1"></div>
+                    <h4 class="element-name">м22.5 диван угловой</h4>
+                    <div class="catalog-element sc-44">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">715.20 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-45-1 c-sc-45-2"></div>
+                    <h4 class="element-name">м22.11 кресло</h4>
+                    <div class="catalog-element sc-45">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">272.40 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-46-1"></div>
+                    <h4 class="element-name">м22.10 к-т кресел</h4>
+                    <div class="catalog-element sc-46">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">679.20 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-47-1"></div>
+                    <h4 class="element-name">м22.14 диван</h4>
+                    <div class="catalog-element sc-47">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">304.80 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-48-1"></div>
+                    <h4 class="element-name">м22.24 комплект диванов</h4>
+                    <div class="catalog-element sc-48">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">703.20 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-49-1"></div>
+                    <h4 class="element-name">м22.25 комплект диванов</h4>
+                    <div class="catalog-element sc-49">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">734.40 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-50-1"></div>
+                    <h4 class="element-name">м22.34 комплект мягкой мебели</h4>
+                    <div class="catalog-element sc-50">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">634.80 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-51-1"></div>
+                    <h4 class="element-name">м22.30 кресло (текстиль)</h4>
+                    <div class="catalog-element sc-51">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">250.80 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-52-1"></div>
+                    <h4 class="element-name">м22.26 комплект диванов</h4>
+                    <div class="catalog-element sc-52">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">1677.60 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-53-1"></div>
+                    <h4 class="element-name">м22.12 диван</h4>
+                    <div class="catalog-element sc-53">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">334.80 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-54-1"></div>
+                    <h4 class="element-name">м22.13 кресло</h4>
+                    <div class="catalog-element sc-54">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">261.60 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-55-1"></div>
+                    <h4 class="element-name">м22.15 диван</h4>
+                    <div class="catalog-element sc-55">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">306.0 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-56-1"></div>
+                    <h4 class="element-name">м22.32 комплект мягкой мебели</h4>
+                    <div class="catalog-element sc-56">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">700.80 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+                <div class="element-container">
+                    <div class="before-image c-sc-57-1 c-sc-57-2"></div>
+                    <h4 class="element-name">м22.34 диван со столиком</h4>
+                    <div class="catalog-element sc-57">
+                        <div class="plus-image"></div>
+                    </div>
+                    <p class="element-price">452.40 руб.</p>
+                    <p href="" class="details">Подробнее</p>
+<p href="" class="details order">Добавить к заказу</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wr-gritings">
+        <div class="container">
+            <h2>Приветствуем Вас в виртуальном каталоге мебели StivMebel.by!</h2>
+            <p>Как не ошибиться с выбором мебели? Как получить товар безупречного качества и не переплатить? Как грамотно решить вопрос с транспортировкой? Мы поможем справиться с каждой из этих задач.</p>
+            <p>У вас остались вопросы? Вы хотите посоветоваться или обсудить условия покупки? Вы можете позвонить нам или <span class="makeacall">заказать звонок!</span></p>
+        </div>
+    </section>
+    <section class="wr-why-us">
+        <div class="container">
+            <div class="why-us__container">
+                <h2>С нами выгодно!</h2>
+                <p>Прямое сотрудничество с производителями позволяет нам держать цены на мебель на демократичном уровне.</p>
+            </div>
+            <div class="why-us__container">
+                <h2>С нами удобно!</h2>
+                <p>Мы даем грамотные консультации по особенностям моделей, помогаем с доставкой, подъемом на этаж и даже сборкой.</p>
+            </div>
+            <div class="why-us__container">
+                <h2>С нами легко!</h2>
+                <p>Качественные фотографии мебели дадут вам возможность получить внятное представление о будущей покупке, избавляя вас от необходимости ездить по магазинам.</p>
+            </div>
+        </div>
+    </section>
+    <section class="wr-down">
+        <div class="container">
+            <div class="header-for-catalog">
+                <div class="header-catalog menu-show">
+                    <ul>
+                        <li><a href="./living-room.html">Акции</a></li>
+                        <li><a href="./living-room.html">Мебель в гостинную</a></li>
+                        <li><a href="./living-room.html">Мебель в спальню</a></li>
+                        <li><a href="./hallway.html">Мебель в прихожую</a></li>
+                        <li><a href="./living-room.html">Мебель в детскую</a></li>
+                        <li><a href="./living-room.html">Офисная мебель</a></li>
+                        <li><a href="./soft-portal.html">Мягкая мебель</a></li>
+                        <li><a href="./living-room.html">Шкафы</a></li>
+                        <li><a href="./living-room.html">Кухни, мебель в кухню</a></li>
+                        <li><a class="numer-of-reserv" href="./reserv.html">Зарезервировано<span></span></a></li>
+                    </ul>
+                </div>
+                <div class="down-contacts">
+                    <h2>Заполните форму и мы вам обязательно перезвоним!</h2>
+                    <form class="sending-email" action="./backend/mail.php">
+                        <label>Вас зовут:</label>
+                        <input name="clientName" type="text">
+                        <label>Ваш номер телефона:</label>
+                        <input name="clientPhone" type="number">
+                        <input class="submit" type="submit">
+                    </form>
+                </div>
+            </div>
+        </div>        
+    </section>
+    <footer>
+        <div class="container">
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sunt ratione minima labore modi assumenda eligendi, ducimus, rem officia tenetur qui, iste dolorum perspiciatis ex maiores numquam? Repudiandae consequuntur saepe explicabo officia eius tenetur laborum fuga, ullam optio at modi.</h4>
+            <p>Copyright 2012-2020 &#169;</p>
+            <a href="https://mitskevich-paul.github.io/resume/">Разработка сайтов</a>
+        </div>
+    </footer>
+    <script src="./build/js/main.min.js"></script>
+    <script>
+        let widthCatalog;
+        function resizePage() {
+            widthCatalog = document.querySelector('.catalog-width').offsetWidth;
+            if (widthCatalog > 700) {
+                for (let i = 0; i < document.querySelectorAll('.element-container').length; i++) {
+                    document.querySelectorAll('.element-container')[i].style.width = `${widthCatalog /3 - 15}px`;
+                }
+            } else if (widthCatalog < 700) {
+                for (let i = 0; i < document.querySelectorAll('.element-container').length; i++) {
+                    document.querySelectorAll('.element-container')[i].style.width = `${widthCatalog /2 - 15}px`;
+                }
+            }
+        }
+        window.addEventListener('resize', ()=>{resizePage()});
+        resizePage();
+    </script>
+</body>
+</html>

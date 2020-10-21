@@ -137,58 +137,29 @@
         </div>
         <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M 24.996094 2 C 20.520865 2 16.366495 5.8464316 13.240234 11.044922 C 10.113974 16.243412 8 22.941841 8 29.261719 C 8 34.240287 9.4303571 38.905289 12.298828 42.359375 C 15.167299 45.813461 19.495886 48 24.996094 48 C 30.4925 48 34.824385 45.813208 37.695312 42.359375 C 40.56624 38.905542 42 34.240774 42 29.261719 C 42 22.941622 39.883895 16.243363 36.755859 11.044922 C 33.627824 5.8464805 29.470479 2 24.996094 2 z M 24.996094 4 C 28.257708 4 32.103504 7.1911131 35.042969 12.076172 C 37.982434 16.961231 40 23.393815 40 29.261719 C 40 33.855663 38.668572 38.059614 36.15625 41.082031 C 33.643928 44.104449 29.972687 46 24.996094 46 C 20.015302 46 16.34767 44.104196 13.837891 41.082031 C 11.328112 38.059867 10 33.856151 10 29.261719 C 10 23.393597 12.015385 16.961182 14.953125 12.076172 C 17.890865 7.191162 21.733323 4 24.996094 4 z"></path></svg> -->
     </header>
-    <section class="wr-popular">
+
+    <section class="wr-catalog">
         <div class="container">
-            <div class="popular-all">
-                <div class="popular-head">
-                    <img src="./build/img/popular.svg" alt="">
-                    <h2>Популярные запросы</h2>
+            <div class="address"><a href="./index.html">Главная</a><span>&#8594;</span><a href="./soft-portal.html">Мягкая мебель</a></div>
+            <div class="catalog-width">
+                <div class="element-container">
+                    <div class="before-image"></div>
+                    <h4 class="element-name">Диваны и кресла</h4>
+                    <div class="catalog-element sc-31"></div>
+                    <a href="./soft-chairs.html" class="details">Подробнее</a>
                 </div>
-                <div class="popular-content">
-                    <div class="popular__grid-container">
-                        <div class="popular__grid-background"></div>
-                        <div class="popular__grid-discr">
-                            <h3>спальни</h3>
-                            <p>Все для комфортного отдыха</p>
-                        </div>
-                    </div>
-                    <div class="popular__grid-container">
-                        <div class="popular__grid-background"></div>
-                        <div class="popular__grid-discr">
-                            <h3>кухни</h3>
-                            <p>По достоинству оценят все хозяйки</p>
-                        </div>
-                    </div>
-                    <div class="popular__grid-container">
-                        <div class="popular__grid-background"></div>
-                        <div class="popular__grid-discr">
-                            <h3>мягкая мебель</h3>
-                            <p>Широкий выбор тканей</p>
-                        </div>
-                    </div>
-                    <div class="popular__grid-container">
-                        <div class="popular__grid-background"></div>
-                        <div class="popular__grid-discr">
-                            <h3>гостинные</h3>
-                            <p>Уют и гармония в Вашем доме</p>
-                        </div>
-                    </div>
-                    <div class="popular__grid-container">
-                        <div class="popular__grid-background"></div>
-                        <div class="popular__grid-discr">
-                            <h3>Прихожие</h3>
-                            <p>Практичность и аэрогономика</p>
-                        </div>
-                    </div>
-                    <div class="popular__grid-container">
-                        <div class="popular__grid-background"></div>
-                        <div class="popular__grid-discr">
-                            <h3>офисная мебель</h3>
-                            <p>Для начальства и сотрудников</p>
-                        </div>
-                    </div>
+                <div class="element-container">
+                    <div class="before-image"></div>
+                    <h4 class="element-name">Пуфики и банкетки</h4>
+                    <div class="catalog-element "></div>
+                    <a href="" class="details">Подробнее</a>
                 </div>
-            </div>
+                <div class="element-container">
+                    <div class="before-image"></div>
+                    <h4 class="element-name">Мякгая мебель для дома</h4>
+                    <div class="catalog-element "></div>
+                    <a href="" class="details">Подробнее</a>
+                </div>
         </div>
     </section>
     <section class="wr-gritings">
@@ -252,5 +223,22 @@
         </div>
     </footer>
     <script src="./build/js/main.min.js"></script>
+    <script>
+        let widthCatalog;
+        function resizePage() {
+            widthCatalog = document.querySelector('.catalog-width').offsetWidth;
+            if (widthCatalog > 700) {
+                for (let i = 0; i < document.querySelectorAll('.element-container').length; i++) {
+                    document.querySelectorAll('.element-container')[i].style.width = `${widthCatalog /3 - 15}px`;
+                }
+            } else if (widthCatalog < 700) {
+                for (let i = 0; i < document.querySelectorAll('.element-container').length; i++) {
+                    document.querySelectorAll('.element-container')[i].style.width = `${widthCatalog /2 - 15}px`;
+                }
+            }
+        }
+        window.addEventListener('resize', ()=>{resizePage()});
+        resizePage();
+    </script>
 </body>
 </html>
